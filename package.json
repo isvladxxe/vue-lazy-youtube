@@ -1,0 +1,40 @@
+{
+  "name": "vue-lazy-youtube",
+  "version": "1.0.0",
+  "main": "dist/lazy-youtube.umd.js",
+  "module": "dist/lazy-youtube.esm.js",
+  "unpkg": "dist/lazy-youtube.min.js",
+  "browser": {
+    "./sfc": "src/lazy-youtube.vue"
+  },
+  "description": "",
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/lazy-youtube.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/lazy-youtube.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/lazy-youtube.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isvladxxe/vue-lazy-youtube.git"
+  },
+  "keywords": [
+    "vue",
+    "lazy",
+    "youtube"
+  ],
+  "author": "Vladislav Isambaiev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isvladxxe/vue-lazy-youtube/issues"
+  },
+  "homepage": "https://github.com/isvladxxe/vue-lazy-youtube#readme",
+  "devDependencies": {
+    "rollup": "^1.1.2",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-vue": "^4.7.1",
+    "vue": "^2.6.6",
+    "vue-template-compiler": "^2.6.6"
+  }
+}
