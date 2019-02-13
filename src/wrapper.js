@@ -12,6 +12,7 @@ export function install(Vue) {
 const plugin = {
     install,
 };
+LazyYoutube.install = install;
 
 // Auto-install when vue is found (eg. in browser via <script> tag)
 let GlobalVue = null;

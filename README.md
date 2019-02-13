@@ -6,11 +6,13 @@ $ npm install vue-lazy-youtube -S
 ```
 ### Usage:
 ```js
+
+import Vue from 'vue' 
+
 import LazyYoutube from 'vue-lazy-youtube' 
+Vue.use(LazyYoutube)
 
 export default {
-    //...
-    components:{ LazyYoutube }
     //...
 }
 ```

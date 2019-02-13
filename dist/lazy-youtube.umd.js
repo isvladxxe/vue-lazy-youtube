@@ -352,6 +352,7 @@
   var plugin = {
       install: install,
   };
+  LazyYoutube.install = install;
 
   // Auto-install when vue is found (eg. in browser via <script> tag)
   var GlobalVue = null;
