@@ -1,6 +1,6 @@
 {
   "name": "vue-lazy-youtube",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/lazy-youtube.umd.js",
   "module": "dist/lazy-youtube.esm.js",
   "unpkg": "dist/lazy-youtube.min.js",
